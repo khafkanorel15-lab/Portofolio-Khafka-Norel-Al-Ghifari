@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Portfolio - Khafka Norel Al-Ghifari</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0a58ca 50%, #052c65 100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 100px 0 80px 0;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .profile-avatar {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            margin: 0 auto;
+            display: block;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background: #0d6efd;
+            opacity: 0.3;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 4px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #0d6efd;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.3);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 35px;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background: #0d6efd;
+            border-radius: 2px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+            z-index: 99;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Sticky -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <i class="bi bi-person-badge text-primary me-2"></i>Khafka Norel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organization">Organisasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-light btn-sm rounded-pill px-3" id="darkModeToggle">
+                            <i class="bi bi-moon-stars-fill me-1"></i> Dark Mode
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="WhatsApp Image 2026-10-21 at 10.56.54.jpeg" alt="Khafka Norel Al-Ghifari" class="profile-avatar">
+                </div>
+                <div class="col-lg-8 text-lg-start text-center">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold mb-3">
+                        <i class="bi bi-star-fill me-1"></i> S1 Sistem Informasi & Hospitality Specialist
+                    </span>
+                    <h1 class="display-4 fw-bold">Khafka Norel Al-Ghifari</h1>
+                    <p class="lead mb-3 text-light">Hospitality & F&B Enthusiast | Customer Service | Food & Beverage Operations</p>
+                    
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-4">
+                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill"><i class="bi bi-telephone-fill text-primary me-1"></i> +62 878-8323-7360</span>
+                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill"><i class="bi bi-envelope-fill text-primary me-1"></i> khafkanorell5@gmail.com</span>
+                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill"><i class="bi bi-geo-alt-fill text-primary me-1"></i> Jakarta, Indonesia</span>
+                    </div>
+
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#contact" class="btn btn-light btn-lg fw-semibold px-4 rounded-pill shadow-sm"><i class="bi bi-chat-dots-fill me-2 text-primary"></i>Hubungi Saya</a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg px-4 rounded-pill"><i class="bi bi-collection-fill me-2"></i>Lihat Portofolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+        <!-- Tentang Saya Section -->
+        <section id="about" class="mb-5 pt-4">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card card-custom p-4 h-100">
+                        <p class="fs-5 leading-relaxed">
+                            Antusias di bidang <strong>Hospitality dan F&B</strong> dengan latar belakang Manajemen Perhotelan serta sedang menempuh studi <strong>S1 Sistem Informasi di Budi Luhur University</strong> dengan IPK <strong>3,50/4,00</strong>.
+                        </p>
+                        <p class="text-secondary leading-relaxed">
+                            Memiliki pengalaman magang kitchen di <em>InterContinental Jakarta Pondok Indah</em> dan bekerja sebagai <em>Waiter</em> di berbagai hotel & event internasional, dengan kemampuan customer service, table setup, food preparation, serta operasional F&B. Berpengalaman melayani tamu VIP dalam <strong>ASEAN Summit di Jakarta Convention Center (JCC)</strong>, serta aktif menjabat di kepengurusan organisasi mahasiswa dan program duta teknologi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card card-custom p-4 bg-primary text-white h-100">
+                        <h4 class="fw-bold mb-4"><i class="bi bi-award-fill me-2"></i>Pencapaian Utama</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-mortarboard-fill fs-2 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">IPK 3.50 / 4.00</h6>
+                                <small>S1 Sistem Informasi Budi Luhur University</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-globe2 fs-2 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">ASEAN Summit Waiter</h6>
+                                <small>Jakarta Convention Center (JCC)</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-people-fill fs-2 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Wakil Koordinator Kominfo</h6>
+                                <small>BEM Budi Luhur University</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-google fs-2 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Google Student Ambassador</h6>
+                                <small>Cohort Program 2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja Section -->
+        <section id="experience" class="mb-5 pt-4">
+            <h2 class="section-title">Pengalaman Kerja Profesional</h2>
+            <div class="card card-custom p-4">
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <h5 class="fw-bold text-primary mb-1">Kitchen Intern / Trainee</h5>
+                            <span class="badge bg-primary rounded-pill px-3 py-2">2024 - 2025</span>
+                        </div>
+                        <p class="text-muted fw-semibold mb-2">InterContinental Jakarta Pondok Indah — Jakarta, Indonesia</p>
+                        <ul class="text-secondary">
+                            <li>Mendukung kegiatan operasional kitchen harian, termasuk persiapan makanan dasar dan aktivitas operasional F&B.</li>
+                            <li>Memastikan kepatuhan ketat terhadap standar kebersihan, sanitasi, dan prosedur pengolahan makanan aman.</li>
+                            <li>Menjaga kebersihan serta kerapian area kerja kitchen selama masa operasional sibuk.</li>
+                            <li>Bekerja sama secara efektif dengan tim chef profesional untuk menyelesaikan pesanan tepat waktu.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <h5 class="fw-bold text-primary mb-1">Waiter Part-Time</h5>
+                            <span class="badge bg-secondary rounded-pill px-3 py-2">Part-Time</span>
+                        </div>
+                        <p class="text-muted fw-semibold mb-2">Good Rich Hotel — Jakarta, Indonesia</p>
+                        <ul class="text-secondary">
+                            <li>Memberikan pelayanan ramah, responsif, dan profesional kepada tamu hotel serta pengunjung acara F&B.</li>
+                            <li>Melakukan penataan meja (table setup) dan memastikan area dining selalu bersih dan siap digunakan.</li>
+                            <li>Membantu penyajian makanan dan minuman dengan mengedepankan kepuasan pelanggan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <h5 class="fw-bold text-primary mb-1">Waiter - ASEAN Summit</h5>
+                            <span class="badge bg-success rounded-pill px-3 py-2">Event Internasional</span>
+                        </div>
+                        <p class="text-muted fw-semibold mb-2">Jakarta Convention Center (JCC) — Jakarta, Indonesia</p>
+                        <ul class="text-secondary">
+                            <li>Melayani delegasi internasional dan tamu VIP selama berlangsungnya Konferensi Tingkat Tinggi ASEAN.</li>
+                            <li>Menjalankan standar pelayanan internasional dengan komunikasi cepat, efisien, dan penuh keramahan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organisasi & Duta Kampus Section -->
+        <section id="organization" class="mb-5 pt-4">
+            <h2 class="section-title">Pengalaman Organisasi & Program Duta</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100 border-start border-primary border-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="p-3 bg-primary bg-opacity-10 rounded-circle text-primary me-3">
+                                <i class="bi bi-diagram-3-fill fs-2"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">BEM Budi Luhur University</h5>
+                                <small class="text-primary fw-semibold">Wakil Koordinator Kementerian Kominfo</small>
+                            </div>
+                        </div>
+                        <p class="text-secondary">
+                            Menjabat sebagai Wakil Koordinator Kementerian Komunikasi dan Informasi dalam Kabinet Asa Luhur BEM Budi Luhur University.
+                        </p>
+                        <ul class="text-secondary ps-3 mb-0">
+                            <li>Mengelola strategi konten media sosial dan publikasi resmi BEM.</li>
+                            <li>Mengoordinasikan tim dokumentasi, liputan acara kampus, dan desain aset visual.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100 border-start border-warning border-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="p-3 bg-warning bg-opacity-10 rounded-circle text-warning me-3">
+                                <i class="bi bi-google fs-2"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Google Student Ambassador</h5>
+                                <small class="text-warning fw-semibold">Cohort Program 2026</small>
+                            </div>
+                        </div>
+                        <p class="text-secondary">
+                            Terpilih sebagai duta mahasiswa resmi dalam program Google Student Ambassador 2026 untuk mengedukasi ekosistem teknologi di lingkungan akademis.
+                        </p>
+                        <ul class="text-secondary ps-3 mb-0">
+                            <li>Menginisiasi campaign edukasi teknologi dan workshop interaktif.</li>
+                            <li>Membangun jejaring komunitas mahasiswa yang adaptif terhadap inovasi digital.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pendidikan Section -->
+        <section id="education" class="mb-5 pt-4">
+            <h2 class="section-title">Latar Belakang Pendidikan</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-mortarboard-fill fs-1 text-primary me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">Budi Luhur University</h5>
+                                <small class="text-muted">Jakarta, Indonesia</small>
+                            </div>
+                        </div>
+                        <p class="fw-semibold text-primary mb-1">S1 Sistem Informasi</p>
+                        <p class="text-muted mb-3">Sedang Menempuh Pendidikan (Aktif)</p>
+                        <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill w-auto align-self-start fs-6">
+                            IPK: 3,50 / 4,00
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-building-check fs-1 text-secondary me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-0">SMK Makarya 2</h5>
+                                <small class="text-muted">Jakarta, Indonesia</small>
+                            </div>
+                        </div>
+                        <p class="fw-semibold text-primary mb-1">Manajemen Perhotelan</p>
+                        <p class="text-muted mb-3">Lulus Tahun 2025</p>
+                        <span class="badge bg-secondary-subtle text-secondary border border-secondary px-3 py-2 rounded-pill w-auto align-self-start fs-6">
+                            Sekolah Menengah Kejuruan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian & Bahasa Section -->
+        <section id="skills" class="mb-5 pt-4">
+            <h2 class="section-title">Kemampuan & Bahasa</h2>
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="card card-custom p-4 h-100">
+                        <h5 class="fw-bold mb-4"><i class="bi bi-sliders me-2 text-primary"></i>Keahlian Operasional & IT</h5>
+                        
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Customer Service & Public Relations</span>
+                                <span class="text-primary fw-bold">95%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Operasional F&B (Table Setup & Preparation)</span>
+                                <span class="text-success fw-bold">90%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Kerja Sama Tim & Manajemen Event</span>
+                                <span class="text-info fw-bold">92%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Aplikasi Desain & Dokumen (Canva, MS Word)</span>
+                                <span class="text-warning fw-bold">88%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" style="width: 88%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-medium">Dasar Web & Pemrograman (HTML, CSS, Python)</span>
+                                <span class="text-dark fw-bold">80%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-dark" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card card-custom p-4 h-100">
+                        <h5 class="fw-bold mb-4"><i class="bi bi-translate me-2 text-primary"></i>Penguasaan Bahasa</h5>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Bahasa Indonesia</h6>
+                                    <small class="text-muted">Bahasa Ibu / Utama</small>
+                                </div>
+                                <span class="badge bg-primary rounded-pill px-3 py-2">Profesional</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Bahasa Inggris</h6>
+                                    <small class="text-muted">Komunikasi Lisan & Tulisan</small>
+                                </div>
+                                <span class="badge bg-success rounded-pill px-3 py-2">Menengah</span>
+                            </div>
+                            <div class="list-group-item d-flex justify-content-between align-items-center py-3 bg-transparent">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Bahasa Jepang</h6>
+                                    <small class="text-muted">Percakapan Dasar</small>
+                                </div>
+                                <span class="badge bg-secondary rounded-pill px-3 py-2">Dasar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio & Proyek Section dengan Filter -->
+        <section id="projects" class="mb-5 pt-4">
+            <h2 class="section-title">Portofolio & Kegiatan</h2>
+            
+            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+                <button class="btn btn-primary rounded-pill px-4 filter-btn active" data-filter="all">Semua</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="hospitality">Hospitality & F&B</button>
+                <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="it-media">Sistem Informasi & Kominfo</button>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="hospitality">
+                    <div class="card card-custom h-100 overflow-hidden">
+                        <div class="bg-primary text-white p-4 text-center fs-1">
+                            <i class="bi bi-cup-hot-fill"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-2">Hospitality</span>
+                            <h5 class="card-title fw-bold">Pelayanan ASEAN Summit</h5>
+                            <p class="card-text text-secondary">Pelayanan F&B bertaraf internasional untuk delegasi mancanegara di Jakarta Convention Center.</p>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal1">Detail Proyek</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="it-media">
+                    <div class="card card-custom h-100 overflow-hidden">
+                        <div class="bg-dark text-white p-4 text-center fs-1">
+                            <i class="bi bi-megaphone-fill"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-2">BEM Kominfo</span>
+                            <h5 class="card-title fw-bold">Media BEM Budi Luhur</h5>
+                            <p class="card-text text-secondary">Pengelolaan publikasi digital, desain feeds sosial media, dan liputan kegiatan mahasiswa.</p>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal2">Detail Proyek</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="it-media">
+                    <div class="card card-custom h-100 overflow-hidden">
+                        <div class="bg-warning text-dark p-4 text-center fs-1">
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning text-dark mb-2">Google Program</span>
+                            <h5 class="card-title fw-bold">Google Student Ambassador</h5>
+                            <p class="card-text text-secondary">Sosialisasi dan edukasi inovasi teknologi digital terbaru bagi mahasiswa kampus Budi Luhur University.</p>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#projectModal3">Detail Proyek</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="contact" class="mb-5 pt-4">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="card card-custom p-4 bg-dark text-white h-100">
+                        <h4 class="fw-bold mb-4">Informasi Kontak</h4>
+                        
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="p-3 bg-primary bg-opacity-20 rounded-circle me-3">
+                                <i class="bi bi-telephone-fill fs-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <small class="text-uppercase text-muted">Telepon / WhatsApp</small>
+                                <h6 class="mb-0 fw-bold">+62 878-8323-7360</h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="p-3 bg-primary bg-opacity-20 rounded-circle me-3">
+                                <i class="bi bi-envelope-fill fs-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <small class="text-uppercase text-muted">Email</small>
+                                <h6 class="mb-0 fw-bold">khafkanorell5@gmail.com</h6>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="p-3 bg-primary bg-opacity-20 rounded-circle me-3">
+                                <i class="bi bi-geo-alt-fill fs-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <small class="text-uppercase text-muted">Lokasi</small>
+                                <h6 class="mb-0 fw-bold">Jakarta, Indonesia</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card card-custom p-4">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium">Nama Anda</label>
+                                    <input type="text" class="form-control rounded-3" placeholder="Masukkan nama" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium">Email Anda</label>
+                                    <input type="email" class="form-control rounded-3" placeholder="nama@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-medium">Subjek</label>
+                                    <input type="text" class="form-control rounded-3" placeholder="Subjek pesan" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-medium">Pesan</label>
+                                    <textarea class="form-control rounded-3" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-semibold">
+                                        <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Khafka Norel Al-Ghifari. Hak Cipta Dilindungi.</p>
+            <small class="text-muted">Dibuat dengan Bootstrap 5 & Passion untuk Hospitality & Teknologi.</small>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary back-to-top shadow" id="backToTopBtn">
+        <i class="bi bi-arrow-up-short fs-4"></i>
+    </button>
+
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Pelayanan ASEAN Summit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">Terlibat langsung sebagai pelayan/waiter profesional di Jakarta Convention Center (JCC) untuk melayani para delegasi dan tamu VIP tingkat internasional dalam rangkaian KTT ASEAN.</p>
+                    <ul>
+                        <li>Penerapan standar pelayanan kelas dunia.</li>
+                        <li>Koordinasi cepat dengan tim perhotelan dan protokoler negara.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Media BEM Budi Luhur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">Mengelola strategi publikasi digital, pembuatan materi visual infografis, dan peliputan acara-acara penting yang diselenggarakan oleh BEM Budi Luhur University.</p>
+                    <ul>
+                        <li>Peningkatan *engagement* media sosial organisasi.</li>
+                        <li>Manajemen tim kreatif dan liputan lapangan.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyek 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Google Student Ambassador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary">Mengemban peran sebagai Google Student Ambassador 2026 untuk menginisiasi lokakarya teknologi, sosialisasi perangkat digital produktif, serta membangun komunitas literasi teknologi di lingkungan kampus.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+
+        darkModeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            if (currentTheme === 'light') {
+                htmlElement.setAttribute('data-bs-theme', 'dark');
+                darkModeToggle.innerHTML = '<i class="bi bi-sun-fill me-1"></i> Light Mode';
+                darkModeToggle.classList.replace('btn-outline-light', 'btn-outline-warning');
+            } else {
+                htmlElement.setAttribute('data-bs-theme', 'light');
+                darkModeToggle.innerHTML = '<i class="bi bi-moon-stars-fill me-1"></i> Dark Mode';
+                darkModeToggle.classList.replace('btn-outline-warning', 'btn-outline-light');
+            }
+        });
+
+        // Portfolio Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('btn-primary', 'active');
+                    btn.classList.add('btn-outline-primary');
+                });
+                button.classList.remove('btn-outline-primary');
+                button.classList.add('btn-primary', 'active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Back to Top Button Logic
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'flex';
+                backToTopBtn.style.alignItems = 'center';
+                backToTopBtn.style.justifyContent = 'center';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
